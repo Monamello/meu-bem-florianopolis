@@ -5,6 +5,7 @@ import 'package:flutter/cupertino.dart';
 import 'dashboard.dart';
 import 'map_screen.dart';
 import 'profile.dart';
+import 'test_mapa.dart';
 
 class MainScreen extends StatefulWidget {
   @override
@@ -13,7 +14,7 @@ class MainScreen extends StatefulWidget {
 
 class _MainScreenState extends State<MainScreen> {
   int _selectedIndex = 1;
-  final List<Widget> _children = [ProfileUser(), MapScreen(), DashBoard()];
+  final List<Widget> _children = [ProfileUser(), MapSample(), DashBoard()];
 
   void onItemTapped(int index) {
     setState(() {
